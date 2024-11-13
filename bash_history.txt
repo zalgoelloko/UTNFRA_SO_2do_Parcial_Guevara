@@ -1,0 +1,294 @@
+echo "export HISTSIZE=-1
+export PROMPT_COMMAND="history -a; history -n""
+source .bashrc
+sudo apt install bim
+sudo apt update
+ls
+pwd
+git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git
+git clone https://github.com/zalgoelloko/UTNFRA_SO_2do_Parcial_Guevara.git
+./UTN-FRA_SO_Examenes/202406/script_Precondicion.sh
+source ~/.bashrc
+git config --global user.name zalgoelloko
+git config --global user.email niko_geniall@hotmail.com
+ls
+git status
+cd UTNFRA_SO_2do_Parcial_Guevara/
+ls
+cd
+UTN-FRA_SO_Examenes/
+cd UTN-FRA_SO_Examenes/
+ls
+cd
+ls
+cd RTA_Examen_20241109/
+ls
+cd
+ls
+sudo cp RTA_Examen_20241109 UTNFRA_SO_2do_Parcial_Guevara/
+ls UTNFRA_SO_2do_Parcial_Guevara/
+sudo cp -r RTA_Examen_20241109 UTNFRA_SO_2do_Parcial_Guevara/
+ls UTNFRA_SO_2do_Parcial_Guevara/
+cd
+ls
+cd UTN-FRA_SO_Examenes/
+ls
+cd
+ls
+sudo cp -r 202406 UTNFRA_SO_2do_Parcial_Guevara/
+cd UTN-FRA_SO_Examenes/
+ls
+sudo cp -r 202406 UTNFRA_SO_2do_Parcial_Guevara/
+cd
+cd UTNFRA_SO_2do_Parcial_Guevara/
+ls
+cd
+cd UTNFRA_SO_2do_Parcial_Guevara/
+ls
+ls -a
+cd
+ls
+cd UTN-FRA_SO_Examenes/
+ls
+sudo cp -r 202406 UTNFRA_SO_2do_Parcial_Guevara/
+ls
+cd
+ls
+cd UTNFRA_SO_2do_Parcial_Guevara/
+sudo cp -r 202406 UTNFRA_SO_2do_Parcial_Guevara/
+cd
+sudo cp UTN-FRA_SO_Examenes/202406 UTNFRA_SO_2do_Parcial_Guevara/
+sudo cp -r UTN-FRA_SO_Examenes/202406 UTNFRA_SO_2do_Parcial_Guevara/
+cd UTNFRA_SO_2do_Parcial_Guevara/
+ls
+cd
+ls
+cd UTN-FRA_SO_Examenes/
+ls
+sudo rm -r UTNFRA_SO_2do_Parcial_Guevara/
+ls
+cd
+ls
+cd UTNFRA_SO_2do_Parcial_Guevara/
+ls
+git add .
+git status 
+git commit -m "Iniciando 2do parcial y subiendo sus archivos"
+git push origin Ayso 
+ls
+cd
+ls
+sudo fdisk -l
+ls
+sudo fdisk -l
+sudo fdisk /dev/sdc
+sudo pvcreate /dev/sdc1
+sudo pvs
+sudo vgcreate vg_datos /dev/sdc1
+sudo pvs
+sudo vgs
+sudo fdisk /dev/sdc
+sudo pvs
+sudo vgs
+sudo fdisk -l
+sudo pvcreate /dev/sdc2
+sudo vgextend vg_datos /dev/dsc2
+sudo vgextend vg_datos /dev/sdc2
+sudo pvs
+sudo vgs
+sudo pvs
+sudo vgs
+sudo fdisk -l
+sudo fdisk /dev/sdd
+sudo fdisk -l
+sudo pvcreate /dev/sdd1
+sudo pvs
+sudo vgs
+sudo vgcreate vg_temp /dev/sdd1
+sudo vgs
+sudo pvs
+sudo lvcreate -L +1.50G vg_datos -n lv_workareas
+sudo lvcreate -L 512M vg_temp -n lv_swap
+sudo vgs
+sudo lvcreate -l +100FREE vg_datos -n lv_docker
+sudo lvcreate -l +100%FREE vg_datos -n lv_docker
+vgs
+sudo vgs
+sudo lvs
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository --yes --update ppa:ansible/ansible
+sudo apt install ansible
+# Add Docker's official GPG key:
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+# Add the repository to Apt sources:
+echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo docker run hello-world
+sudo fdisk -l
+sudo mkfs.ext4 /dev/mapper/vg_datos-lv_workareas
+sudo mkswap /dev/mapper/vg_temp-lv_swap
+sudo mkfs.ext4 /dev/mapper/vg_datos-lv_docker
+sudo cd /var/lib/docker/
+cd /var/lib/docker/
+sudo cd /var/lib/docker/
+sudo mount /dev/mapper/vg_datos-lv_docker /var/lib/docker/
+df -h
+cd /
+ll
+sudo mkdir work
+ll
+sudo mount /dev/mapper/vg_datos-lv_workareas work/
+df - h
+df -h
+free -h
+sudo swapon /dev/mapper/vg_temp-lv_swap
+free -h
+cd
+ls
+cd UTNFRA_SO_2do_Parcial_Guevara/
+ls
+cd RTA_Examen_20241109/
+LS
+ls
+sudo vim Punto_A.sh 
+claear
+clear
+ls
+sudo vim Punto_A.sh 
+cd .
+ls
+cd ..
+ls
+git add.
+git status
+git add .
+git commit -m "Subiendo punto_A.sh"
+git push origin Ayso 
+cd
+cd /usr/local/bin/
+sudo vim Guevara_AltaUser-Groups.sh
+chmod +x 
+/usr/local/bin/Godriguez_AltaUser-Groups.sh
+/usr/local/bin/Rodriguez_AltaUser-Groups.sh guevara /home/guevara/UTNFRA_SO_2do_Parcial_Guevara/202406/bash_script/Lista_Usuarios.txt
+chmod +x 
+/usr/local/bin/Guevara_AltaUser-Groups.sh
+/usr/local/bin/Guevara_AltaUser-Groups.sh guevara /home/guevara/UTNFRA_SO_2do_Parcial_Guevara/202406/bash_script/Lista_Usuarios.txt
+sudo chmod +x 
+/usr/local/bin/Guevara_AltaUser-Groups.sh
+sudo chmod +x
+/usr/local/bin/Guevara_AltaUser-Groups.sh
+ls
+sudo chmod +x
+/Guevara_AltaUser-Groups.sh
+sudo chmod +x
+Guevara_AltaUser-Groups.sh
+sudo chmod +x Guevara_AltaUser-Groups.sh
+ls
+sudo /usr/local/bin/Guevara_AltaUser-Groups.sh guevara /home/guevara/UTNFRA_SO_2do_Parcial_Guevara/202406/bash_script/Lista_Usuarios.txt
+sudo cat /etc/shadow
+cd
+cd UTNFRA_SO_2do_Parcial_Guevara/
+ls
+git status
+ls
+cd RTA_Examen_20241109/
+ls
+sudo vim Punto_B.sh 
+clear
+sudo vim Punto_B.sh 
+cd ..
+ls
+git status
+git add .
+git commit -m "Subiendo Punto_B.sh"
+git push origin Ayso
+cd
+cd UTNFRA_SO_2do_Parcial_Guevara/
+cd 202406/
+ls
+sudo docker ps
+cd docker/
+ls
+sudo vim index.html
+df -h
+sudo lvextend -l +100%FREE /dev/mapper/vg_datos-lv_docker
+sudo resize2fs /dev/mapper/vg_datos-lv_docker
+sudo docker run -d -p 80:80 -v "$PWD":/usr/share/nginx/html nginx
+sudo docker ps
+sudo docker pull nginx
+ls
+sudo systemctl restart docker
+sudo systemctl status docker
+sudo vgs
+df -h
+sudo resize2fs /dev/mapper/vg_datos-lv_docker
+sudo docker run -d -p 80:80 -v "$PWD":/usr/share/nginx/html nginx
+sudo lvextend -L +50M /dev/mapper/vg_datos-lv_docker
+fdisk -l
+sudo fdisk -l
+sudo vgs
+sudo pvs
+cd
+df -h
+sudo rm -rf /var/lib/docker/tmp/*
+sudo systemctl restart docker
+df -h /var/lib/docker
+sudo vgs
+sudo lvextend -l +100%FREE/dev/mapper/vg_datos-
+lv_docker
+sudo lvs
+sudo lsblk
+sudo fdisk sdc2
+r
+sudo smartctl -a /dev/sdc2
+df -h
+mount -v
+df /dev/sda2
+cd UTNFRA_SO_2do_Parcial_Guevara/
+ls
+cd 202406/
+ls
+cd docker/
+ls
+sudo vim run.sh
+ls
+cd ..
+ls
+cd ..
+ls
+git status
+git add .
+ls
+cd RTA_Examen_20241109/
+ls
+sudo vim Punto_C.sh
+cd
+cd UTNFRA_SO_2do_Parcial_Guevara/
+git status
+git add .
+git commit -m "Agregue el punto C"
+ls
+ls -la
+cd
+ls -la
+cd .bash_history
+sudo vim .bash_history
+history -a
+$HOME/.bash_history
+sudo $HOME/.bash_history
+sudo cp $HOME/.bash_history UTNFRA_SO_2do_Parcial_Guevara/
+cd UTNFRA_SO_2do_Parcial_Guevara/
+ls
+ls -la
+git status
+git add .
+cd
+git add bash_history.txt 
+cd UTNFRA_SO_2do_Parcial_Guevara/
